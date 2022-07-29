@@ -7,7 +7,7 @@ body{
 }
 
 .sky{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 100vh;
     background: url(img/background.jpg);
     /* background-position: center; */
@@ -19,7 +19,7 @@ body{
 }
 
 .tree{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     background: url(img/trees.png);
     height: 100vh;
     width: 100%;
@@ -32,7 +32,7 @@ body{
 }
 
 .track{
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     height: 200px;
     width: 800vw;
     background: url(img/track.png);
