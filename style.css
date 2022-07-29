@@ -3,16 +3,19 @@
     padding: 0;
 }
 body{
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .sky{
-   border: 2px solid red;
+    border: 2px solid red;
     height: 100vh;
     background: url(img/background.jpg);
     /* background-position: center; */
     background-repeat: no-repeat;
     /* background-size: cover; */
+    position: absolute;
+    top: 0px;
+    width: 100%;
 }
 
 .tree{
@@ -23,56 +26,88 @@ body{
     /* background-position: center; */
     background-repeat: no-repeat;
     /* background-size: cover; */
+    position: absolute;
+    top: -13vh;
 
 }
 
 .track{
     border: 3px solid blue;
-    height: 60vh;
-    width: 100%;
+    height: 200px;
+    width: 800vw;
     background: url(img/track.png);
-    background-size: cover;
+    /* background-size: cover; */
     position: absolute;
-    top: 70vh;
-    
+    top: 92vh; 
+    position: absolute;
+    top: 73vh;
+    animation: trackMove linear 5s infinite;
 }
-/* 
+
 .car{
-    position: absolute;
-    top: 357px;
-    left: 383px;
-    border: 2px solid orange;
-    height: 30vh;
-    width: 100vh;
+    height: 113px;
+    width: 380px;
+    top: 456px;
+    left: 342px;
     background: url(img/car_body.png);
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    
+    background-repeat: no-repeat;
+    position: absolute;
+    animation: carShake linear 1s infinite;
+   
 }
 
-.wheel_l{
-    position: absolute;
-    top: 435px;
-    left: 450px;
-    border: 2px solid orange;
-    height: 15vh;
-    width: 18vh;
+#wheel-l{
+    height: 73px;
+    width: 73px;
+    top: 46px;
+    left: 49px;
     background: url(img/car_wheel_left.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-}
-
-.wheel_r{
-    position: absolute;
-    top: 439px;
-    left: 782px;
-    border: 2px solid orange;
-    height: 15vh;
-    width: 19vh;
-    background: url(img/car_wheel_right.png);
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-} */
+    position: absolute;
+    /* animation: rotation;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite; */
+    animation: rotation linear .6s infinite;
+}
+
+#wheel-r{
+    height: 71px;
+    width: 70px;
+    top: 50px;
+    left: 251px;
+    background: url(img/car_wheel_left.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    animation: rotation linear .6s infinite;
+}
+
+@keyframes rotation {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes carShake {
+    
+    0%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+}
+
+@keyframes trackMove{
+    100%{
+        transform: translatex(-500vw);
+    }
+}
+
+
+
