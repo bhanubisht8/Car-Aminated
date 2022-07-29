@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* overflow: hidden; */
+}
+
+.sky{
+   border: 2px solid red;
+    height: 100vh;
+    background: url(img/background.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+.tree{
+    border: 2px solid green;
+    background: url(img/trees.png);
+    height: 100vh;
+    width: 100%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+
+}
+
+.track{
+    border: 3px solid blue;
+    height: 60vh;
+    width: 100%;
+    background: url(img/track.png);
+    background-size: cover;
+    position: absolute;
+    top: 70vh;
+    
+}
+/* 
+.car{
+    position: absolute;
+    top: 357px;
+    left: 383px;
+    border: 2px solid orange;
+    height: 30vh;
+    width: 100vh;
+    background: url(img/car_body.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.wheel_l{
+    position: absolute;
+    top: 435px;
+    left: 450px;
+    border: 2px solid orange;
+    height: 15vh;
+    width: 18vh;
+    background: url(img/car_wheel_left.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.wheel_r{
+    position: absolute;
+    top: 439px;
+    left: 782px;
+    border: 2px solid orange;
+    height: 15vh;
+    width: 19vh;
+    background: url(img/car_wheel_right.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
